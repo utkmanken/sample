@@ -1,0 +1,85 @@
+    html, body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        display: flex;
+        flex-direction: column; 
+    }
+
+/* <!-- 画面比は9:16固定で、幅の狭い方に合わせる感じで --> */
+
+    #base {
+        display: flex;
+        flex-direction: column; 
+        position: relative;
+        aspect-ratio: 9 / 16;
+        width: min(100lvw, calc(100vh * 9 / 16));
+        height: auto;
+        background-color: lightgray;
+        margin: 0 auto;
+        z-index: 1;
+        justify-content: space-between;
+    }
+
+    #buttonblock{
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+        justify-content: space-between;
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, 0);
+        margin: 0 auto;
+        width: 75%;
+        height: 60%;
+        background-color: gray;
+
+    }
+
+    #textframe {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 30%;
+        background-color: gray;
+        z-index: 5;
+    }
+
+    #textbox{
+        position: absolute;
+        margin: 5%;
+        width: 80%;
+        height: 80%;
+        z-index: 6;
+    }
+
+    .systembutton{
+        position: absolute;
+        width: 100px;
+        height: 60px;
+        z-index: 7;
+    }
+
+    #skipbutton{
+        top: 3%;
+        left: 55%;
+    }
+
+    #mainmenu{
+        top: 3%;
+        left: 78%;
+    }
+
+    .titlebutton{
+        width: 75%;
+        height: 15%;
+    }
+	
+	div.maintext#textframe{position: relative;}
+	button#proceed_sc{
+		position: absolute;
+		right: 3%;
+		bottom: 3%;
+		
+	}
