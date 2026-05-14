@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <!-- スペースの数はそちらに合わせます。 -->
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../css/style.css">
+        <title>utktanteiroku_sample</title>
+    </head>
+    <body>
+        <div id="base">
+            <div id="background"></div>
+
+            <button id="mainmenu" class="systembutton">
+                メインメニュー
+            </button>
+            <button id="skipbutton" class="systembutton">
+                次の謎解きまでスキップ
+                <!--　この機能は必要無くなるかもしれませんが、ストーリーを追わずに謎解きのみをプレイする方用の機能です。可能でしたら、確認画面が欲しい -->
+            </button>
+            
+            <div id="textframe" class="maintext"><!--テキストの後ろに配置されるゲーム上のテキストの見かけの枠-->
+                <div id="textbox" class="maintext">
+                    <span id="p_textbox">ここにテキストが入ります。</span>
+                </div><!--実際にテキストを表示させるdiv-->
+				<!--勝手に追加したボタン-->
+				<button class="maintext" id="proceed_sc">次へ</button>
+            </div>
+        </div>
+        
+    </body>
+</html>
